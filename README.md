@@ -3,6 +3,7 @@ Trying to understand the why and when to use constant memory I stumbled across L
 
 I decided to modify the script a little bit to get some more understanding for it:
 - changed the vector datatypes to float
+- cleared the cache between subsequent runs
 - modified the script to run for multiple input sizes 
 - graphed the results 
 
