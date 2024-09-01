@@ -383,10 +383,8 @@ int main(int argc, char** argv)
 
       float const latency_global_memory{measure_performance(
           bound_function_global_memory, stream, num_repeats, num_warmups)};
-      // std::cout << " difference = "<<latency_global_memory-latency_constant_memory
-      //   <<" blocks = "<<(num_sums + block_size - 1) / block_size<<std::endl;
       std::cout << "Finished for num_sums = " << num_sums
-        << "Latency for Add using constant memory: "
+        << " latency for Add using constant memory: "
         << latency_constant_memory << " ms" << " global memory: "
         << latency_global_memory << " ms" << std::endl << std::endl;
       gt[p-START] = latency_global_memory;
